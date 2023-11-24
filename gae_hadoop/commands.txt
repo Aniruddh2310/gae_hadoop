@@ -1,3 +1,13 @@
+word count java(inbuilt):
+start-all.sh
+jps
+hdfs dfs -mkdir -p /user/hadoop/input
+hdfs dfs -put txt1.txt /user/hadoop/input/
+cd $HADOOP_HOME
+hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar wordcount input output
+hdfs dfs -ls /user/hadoop/output
+hdfs dfs -cat /user/hadoop/output/part-r-00000
+
 word count (with java) : 
 
   start-dfs.sh
