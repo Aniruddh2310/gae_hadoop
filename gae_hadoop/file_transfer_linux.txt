@@ -11,3 +11,24 @@ scp /home/ctest/Videos/FunnyVideo.mp4 root@192.168.0.11:/home/virtualguy/Videos
 ssh-keygen -f "/home/ctest/.ssh/known_hosts" -R 192.168.0.11
 
 @reviever : sudo chmod 777 <file_path>
+
+file transfer windows:
+Step 1: Create a folder in desktop and right click on it.
+Step 2: Choose share with option then specific people click it.
+Step 3: Click the arrow and choose everyone option and click add.
+Step 4: After click share and done.
+Step 5: In VMware goto settings.
+Step 6: choose network adapter after network connection pick the physical network option
+then save. Do this step 5,6 in both system
+
+Folder access Receiving System(other system).
+Step 7: In Receivers system (folder accessing system ) Go to start menu and type run,
+choose run terminal.
+Step 8 : In Run terminal enter the ip address of other syetem [folder sharing system]
+EX -&gt; \\10.10.45.135
+To know ipv4 address type in cmd ipconfig
+Step 9: Enter the username and password of sender system[folder sharing system].
+Step 10:If password error, Go to control panel and check the administrator was password
+set if not set the password.
+Sample password: cloudl@b
+Step 11:after opening file explorer navigate to the folder.
